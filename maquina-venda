@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int
+main ()
+{
+  double valor, x,y;
+  valor = 0;
+  x=0;
+  while (x < 0.45)
+    {
+        printf ("Insira a moeda");
+        scanf ("%lf", &valor);
+        if(valor==0.10 || valor==0.25){
+        x = x + valor;}
+        else
+        printf("\nIncorreto\n");
+    }
+
+  if (x > 0.45)
+    {
+      y = 0.45 - x;
+      printf ("Recebe refrigerante, mas perdeu %.2lf", y);
+    }
+  else
+    printf ("Recebe refrigerante");
+  return 0;
+}
